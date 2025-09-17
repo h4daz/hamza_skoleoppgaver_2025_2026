@@ -1,0 +1,21 @@
+Stemmetelling etter simulering:
+Ap: 13 stemmer
+FrP: 13 stemmer
+Vp: 9 stemmer
+SV: 12 stemmer
+H: 12 stemmer
+KrF: 19 stemmer
+Sp: 9 stemmer
+MDG: 13 stemmer
+
+Prosentandel per parti:
+Ap: 13.00%
+FrP: 13.00%
+Vp: 9.00%
+SV: 12.00%
+H: 12.00%
+KrF: 19.00%
+Sp: 9.00%
+MDG: 13.00%
+
+Vinner av det simulerte valget: KrF med 19 stemmer
