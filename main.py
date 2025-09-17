@@ -1,20 +1,20 @@
-print("Velkommen til valget 2025 stortinget") 
-start = input("Trykk enter for å fortsette")
-if start == "":
+print("Velkommen til valget 2025 stortinget") #skriver ut til brukeren
+start = input("Trykk enter for å fortsette") # viser teksten og venter at brukeren skal trykke 
+if start == "": #sjekker om brukeren har trykket enter
     print("Velkommen til valget 2025 stortinget")
     print("Her er en liste over partiene du kan stemme på:") 
     print("Ap, FrP, Vp, SV, H, KrF, Sp, MDG")
-
-partier = ["Ap", "FrP", "Vp", "SV", "H", "KrF", "Sp", "MDG"]
-valg = input("Hvilket parti vil du stemme på?")
+# alt her kommer up etter enter er trykk
+partier = ["Ap", "FrP", "Vp", "SV", "H", "KrF", "Sp", "MDG"] # her er en liste over parti
+valg = input("Hvilket parti vil du stemme på?") #venter på at jeg velger også valg er variblen som lagrer svaret
 
 
 # gjør til små bokstaver slik at input ikke feiler
-valg = valg.lower()
-partier = [p.lower() for p in partier]
+valg = valg.lower()  # her ser man at jeg gjør svaret til små bokstaver fordi valg kan vere ap,Ap 
+partier = [p.lower() for p in partier] # her gjør at alt blir små bokstaver i listen
 
-if valg in partier:
-    print(f"Du har valgt å stemme på {valg.upper()}. Takk for din stemme!")
+if valg in partier: # sjekker om valg er i listen partier og if er en betingelse og in er for å sjekke om noe er i noe
+    print(f"Du har valgt å stemme på {valg.upper()}. Takk for din stemme!") # her skrev jeg at den skal skrive ut en mld, valg.upper gjør at det blir stor bukstav, f er for å ik bruke + eller str 
     if valg == partier[0]:
         print("Du har stemt på Ap.")
     
@@ -32,9 +32,10 @@ if valg in partier:
         print("Du har stemt på Sp.")
     elif valg == partier[7]:
         print("Du har stemt på MDG.") 
+        # her er elif som betyr else if og det er for å sjekke flere betingelser
 else:
     print("feil svar, prøv igjen")
-
+# her er det en som skriver ut hvis jeg har skrevet feil
 
 # Legg til enkel telling av stemmer
 stemmer = [0] * len(partier) # her putter vi en tom liste med 0 som at alle starter med 0 stemmer
